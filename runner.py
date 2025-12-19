@@ -178,20 +178,20 @@ def main():
     """Run experiments with different configurations"""
     runner = ExperimentRunner(output_file="results.json")
     
-    # Experiment 1: Expectimax with depth 3
-    print("\n### EXPERIMENT 1: Expectimax (Depth 3) ###")
+    # Experiment 1: Expectimax with depth 4
+    print("\n### EXPERIMENT 1: Expectimax (Depth 4) ###")
     config1 = {
         'type': 'expectimax',
-        'params': {'depth': 3}
+        'params': {'depth': 4}
     }
     results1 = runner.run_experiments(config1, num_games=20, verbose=False)
     runner.print_summary(results1)
     
-    # Experiment 2: Expectimax with depth 4
-    print("\n### EXPERIMENT 2: Expectimax (Depth 4) ###")
+    # Experiment 2: Expectimax with depth 5
+    print("\n### EXPERIMENT 2: Expectimax (Depth 5) ###")
     config2 = {
         'type': 'expectimax',
-        'params': {'depth': 4}
+        'params': {'depth': 5}
     }
     results2 = runner.run_experiments(config2, num_games=20, verbose=False)
     runner.print_summary(results2)

@@ -149,16 +149,6 @@ config = {
 - Early termination for terminal states
 - Efficient move generation
 
-## Expected Results
-
-Based on the proposal and literature:
-- **Depth 3**: ~70-80% win rate (reaching 2048)
-- **Depth 4**: ~85-95% win rate
-- **Greedy**: ~5-15% win rate
-- **Ablation (no smoothness)**: ~50-60% win rate
-
-Average scores should be 15,000-40,000 depending on configuration.
-
 ## References
 
 1. Nie, H., Hou, A., & An, L. (2016). *AI Plays 2048*. Stanford CS229 Project Report.

@@ -20,7 +20,7 @@ def create_submission_zip():
         'demo.py',
         'requirements.txt',
         'README.md',
-        'results.json',  # If it exists
+        # 'results.json',  # If it exists
     ]
     
     # Image files (if they exist)
