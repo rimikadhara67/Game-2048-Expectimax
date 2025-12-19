@@ -786,5 +786,1993 @@
       "reached_4096": 0,
       "reached_8192": 0
     }
+  },
+  {
+    "agent_type": "expectimax",
+    "agent_params": {
+      "depth": 5
+    },
+    "num_games": 20,
+    "timestamp": "2025-12-18T20:35:41.529367",
+    "games": [
+      {
+        "final_score": 14776,
+        "max_tile": 1024,
+        "moves": 870,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 543.1917555332184,
+        "total_nodes": 5972675,
+        "avg_time_per_move": 0.6243583396933544,
+        "avg_nodes_per_move": 6865.14367816092,
+        "board": [
+          [
+            4,
+            32,
+            4,
+            2
+          ],
+          [
+            64,
+            16,
+            512,
+            16
+          ],
+          [
+            16,
+            1024,
+            32,
+            4
+          ],
+          [
+            4,
+            128,
+            2,
+            64
+          ]
+        ],
+        "game_number": 1
+      },
+      {
+        "final_score": 14728,
+        "max_tile": 1024,
+        "moves": 862,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 583.6888365745544,
+        "total_nodes": 6440819,
+        "avg_time_per_move": 0.6771332210841698,
+        "avg_nodes_per_move": 7471.947795823666,
+        "board": [
+          [
+            4,
+            2,
+            4,
+            2
+          ],
+          [
+            512,
+            32,
+            16,
+            64
+          ],
+          [
+            8,
+            64,
+            1024,
+            4
+          ],
+          [
+            128,
+            32,
+            16,
+            2
+          ]
+        ],
+        "game_number": 2
+      },
+      {
+        "final_score": 25568,
+        "max_tile": 2048,
+        "moves": 1315,
+        "won_2048": true,
+        "won_4096": false,
+        "total_time": 822.3877983093262,
+        "total_nodes": 8105339,
+        "avg_time_per_move": 0.6253899606915028,
+        "avg_nodes_per_move": 6163.755893536121,
+        "board": [
+          [
+            2,
+            8,
+            128,
+            2
+          ],
+          [
+            16,
+            64,
+            32,
+            512
+          ],
+          [
+            32,
+            8,
+            2048,
+            8
+          ],
+          [
+            2,
+            4,
+            16,
+            2
+          ]
+        ],
+        "game_number": 3
+      },
+      {
+        "final_score": 16152,
+        "max_tile": 1024,
+        "moves": 956,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 578.4060072898865,
+        "total_nodes": 6372104,
+        "avg_time_per_move": 0.605027204278124,
+        "avg_nodes_per_move": 6665.380753138075,
+        "board": [
+          [
+            2,
+            16,
+            32,
+            8
+          ],
+          [
+            1024,
+            128,
+            64,
+            16
+          ],
+          [
+            8,
+            256,
+            512,
+            4
+          ],
+          [
+            2,
+            16,
+            8,
+            2
+          ]
+        ],
+        "game_number": 4
+      },
+      {
+        "final_score": 14520,
+        "max_tile": 1024,
+        "moves": 853,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 568.5006990432739,
+        "total_nodes": 6370953,
+        "avg_time_per_move": 0.6664720973543656,
+        "avg_nodes_per_move": 7468.8780773739745,
+        "board": [
+          [
+            2,
+            4,
+            16,
+            32
+          ],
+          [
+            8,
+            512,
+            64,
+            2
+          ],
+          [
+            128,
+            16,
+            1024,
+            16
+          ],
+          [
+            4,
+            8,
+            32,
+            4
+          ]
+        ],
+        "game_number": 5
+      },
+      {
+        "final_score": 7324,
+        "max_tile": 512,
+        "moves": 513,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 344.38090991973877,
+        "total_nodes": 3839634,
+        "avg_time_per_move": 0.6713078166076779,
+        "avg_nodes_per_move": 7484.666666666667,
+        "board": [
+          [
+            16,
+            128,
+            32,
+            4
+          ],
+          [
+            2,
+            256,
+            512,
+            8
+          ],
+          [
+            8,
+            32,
+            64,
+            32
+          ],
+          [
+            2,
+            4,
+            16,
+            8
+          ]
+        ],
+        "game_number": 6
+      },
+      {
+        "final_score": 27276,
+        "max_tile": 2048,
+        "moves": 1421,
+        "won_2048": true,
+        "won_4096": false,
+        "total_time": 800.1906752586365,
+        "total_nodes": 8746612,
+        "avg_time_per_move": 0.5631179980708209,
+        "avg_nodes_per_move": 6155.251231527093,
+        "board": [
+          [
+            2,
+            16,
+            4,
+            2
+          ],
+          [
+            8,
+            64,
+            2048,
+            8
+          ],
+          [
+            256,
+            128,
+            32,
+            16
+          ],
+          [
+            8,
+            32,
+            512,
+            4
+          ]
+        ],
+        "game_number": 7
+      },
+      {
+        "final_score": 12052,
+        "max_tile": 1024,
+        "moves": 704,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 432.7366874217987,
+        "total_nodes": 4726536,
+        "avg_time_per_move": 0.6146827946332368,
+        "avg_nodes_per_move": 6713.829545454545,
+        "board": [
+          [
+            16,
+            8,
+            2,
+            8
+          ],
+          [
+            8,
+            32,
+            128,
+            4
+          ],
+          [
+            2,
+            16,
+            64,
+            2
+          ],
+          [
+            4,
+            256,
+            8,
+            1024
+          ]
+        ],
+        "game_number": 8
+      },
+      {
+        "final_score": 17244,
+        "max_tile": 1024,
+        "moves": 1021,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 581.7428722381592,
+        "total_nodes": 6353966,
+        "avg_time_per_move": 0.5697775438179815,
+        "avg_nodes_per_move": 6223.277179236043,
+        "board": [
+          [
+            4,
+            32,
+            8,
+            2
+          ],
+          [
+            1024,
+            64,
+            256,
+            16
+          ],
+          [
+            16,
+            512,
+            16,
+            32
+          ],
+          [
+            2,
+            4,
+            256,
+            8
+          ]
+        ],
+        "game_number": 9
+      },
+      {
+        "final_score": 15432,
+        "max_tile": 1024,
+        "moves": 897,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 586.7458412647247,
+        "total_nodes": 6439839,
+        "avg_time_per_move": 0.6541202243753899,
+        "avg_nodes_per_move": 7179.307692307692,
+        "board": [
+          [
+            8,
+            2,
+            32,
+            8
+          ],
+          [
+            64,
+            4,
+            16,
+            1024
+          ],
+          [
+            8,
+            256,
+            32,
+            8
+          ],
+          [
+            2,
+            4,
+            512,
+            2
+          ]
+        ],
+        "game_number": 10
+      },
+      {
+        "final_score": 12160,
+        "max_tile": 1024,
+        "moves": 724,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 463.90133261680603,
+        "total_nodes": 5130548,
+        "avg_time_per_move": 0.6407476969845387,
+        "avg_nodes_per_move": 7086.39226519337,
+        "board": [
+          [
+            2,
+            16,
+            4,
+            16
+          ],
+          [
+            4,
+            32,
+            8,
+            1024
+          ],
+          [
+            16,
+            256,
+            128,
+            2
+          ],
+          [
+            4,
+            64,
+            16,
+            4
+          ]
+        ],
+        "game_number": 11
+      },
+      {
+        "final_score": 27136,
+        "max_tile": 2048,
+        "moves": 1403,
+        "won_2048": true,
+        "won_4096": false,
+        "total_time": 831.2990109920502,
+        "total_nodes": 9119609,
+        "avg_time_per_move": 0.5925153321397364,
+        "avg_nodes_per_move": 6500.077690662865,
+        "board": [
+          [
+            4,
+            16,
+            8,
+            4
+          ],
+          [
+            256,
+            2048,
+            32,
+            128
+          ],
+          [
+            512,
+            16,
+            64,
+            8
+          ],
+          [
+            8,
+            2,
+            4,
+            2
+          ]
+        ],
+        "game_number": 12
+      },
+      {
+        "final_score": 14400,
+        "max_tile": 1024,
+        "moves": 838,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 490.0201916694641,
+        "total_nodes": 5355808,
+        "avg_time_per_move": 0.5847496320637997,
+        "avg_nodes_per_move": 6391.178997613365,
+        "board": [
+          [
+            4,
+            16,
+            1024,
+            8
+          ],
+          [
+            2,
+            8,
+            64,
+            16
+          ],
+          [
+            4,
+            128,
+            32,
+            512
+          ],
+          [
+            2,
+            8,
+            16,
+            8
+          ]
+        ],
+        "game_number": 13
+      },
+      {
+        "final_score": 14544,
+        "max_tile": 1024,
+        "moves": 859,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 569.4539036750793,
+        "total_nodes": 6261378,
+        "avg_time_per_move": 0.6629265467695918,
+        "avg_nodes_per_move": 7289.147846332945,
+        "board": [
+          [
+            4,
+            512,
+            16,
+            2
+          ],
+          [
+            8,
+            16,
+            32,
+            64
+          ],
+          [
+            32,
+            1024,
+            128,
+            2
+          ],
+          [
+            16,
+            2,
+            8,
+            4
+          ]
+        ],
+        "game_number": 14
+      },
+      {
+        "final_score": 15512,
+        "max_tile": 1024,
+        "moves": 902,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 573.1085247993469,
+        "total_nodes": 6395852,
+        "avg_time_per_move": 0.6353753046555952,
+        "avg_nodes_per_move": 7090.745011086475,
+        "board": [
+          [
+            4,
+            2,
+            32,
+            2
+          ],
+          [
+            32,
+            512,
+            2,
+            8
+          ],
+          [
+            4,
+            1024,
+            32,
+            16
+          ],
+          [
+            64,
+            2,
+            8,
+            256
+          ]
+        ],
+        "game_number": 15
+      },
+      {
+        "final_score": 10772,
+        "max_tile": 1024,
+        "moves": 639,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 413.05489325523376,
+        "total_nodes": 4614432,
+        "avg_time_per_move": 0.646408283654513,
+        "avg_nodes_per_move": 7221.333333333333,
+        "board": [
+          [
+            2,
+            16,
+            2,
+            8
+          ],
+          [
+            8,
+            64,
+            128,
+            32
+          ],
+          [
+            32,
+            1024,
+            16,
+            8
+          ],
+          [
+            4,
+            8,
+            64,
+            2
+          ]
+        ],
+        "game_number": 16
+      },
+      {
+        "final_score": 16268,
+        "max_tile": 1024,
+        "moves": 968,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 567.5899362564087,
+        "total_nodes": 6298885,
+        "avg_time_per_move": 0.5863532399343065,
+        "avg_nodes_per_move": 6507.112603305785,
+        "board": [
+          [
+            2,
+            16,
+            512,
+            8
+          ],
+          [
+            4,
+            32,
+            64,
+            16
+          ],
+          [
+            8,
+            128,
+            1024,
+            8
+          ],
+          [
+            2,
+            16,
+            32,
+            256
+          ]
+        ],
+        "game_number": 17
+      },
+      {
+        "final_score": 12464,
+        "max_tile": 1024,
+        "moves": 745,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 485.7305784225464,
+        "total_nodes": 5406544,
+        "avg_time_per_move": 0.6519873535873106,
+        "avg_nodes_per_move": 7257.106040268456,
+        "board": [
+          [
+            32,
+            2,
+            64,
+            4
+          ],
+          [
+            4,
+            128,
+            32,
+            1024
+          ],
+          [
+            16,
+            256,
+            16,
+            4
+          ],
+          [
+            2,
+            4,
+            64,
+            2
+          ]
+        ],
+        "game_number": 18
+      },
+      {
+        "final_score": 7384,
+        "max_tile": 512,
+        "moves": 512,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 315.74605679512024,
+        "total_nodes": 3504551,
+        "avg_time_per_move": 0.6166915171779692,
+        "avg_nodes_per_move": 6844.826171875,
+        "board": [
+          [
+            2,
+            16,
+            64,
+            2
+          ],
+          [
+            8,
+            512,
+            8,
+            4
+          ],
+          [
+            64,
+            16,
+            256,
+            128
+          ],
+          [
+            8,
+            32,
+            8,
+            2
+          ]
+        ],
+        "game_number": 19
+      },
+      {
+        "final_score": 26636,
+        "max_tile": 2048,
+        "moves": 1374,
+        "won_2048": true,
+        "won_4096": false,
+        "total_time": 760.3202931880951,
+        "total_nodes": 8263198,
+        "avg_time_per_move": 0.5533626587977403,
+        "avg_nodes_per_move": 6013.9723435225615,
+        "board": [
+          [
+            8,
+            2,
+            4,
+            256
+          ],
+          [
+            16,
+            64,
+            2048,
+            2
+          ],
+          [
+            8,
+            512,
+            16,
+            8
+          ],
+          [
+            2,
+            64,
+            8,
+            4
+          ]
+        ],
+        "game_number": 20
+      }
+    ],
+    "statistics": {
+      "avg_score": 16117.4,
+      "max_score": 27276,
+      "min_score": 7324,
+      "avg_max_tile": 1177.6,
+      "highest_tile": 2048,
+      "avg_moves": 918.8,
+      "avg_time_per_move": 0.6221252383185861,
+      "win_rate_2048": 0.2,
+      "win_rate_4096": 0.0,
+      "reached_128": 20,
+      "reached_256": 20,
+      "reached_512": 20,
+      "reached_1024": 18,
+      "reached_2048": 4,
+      "reached_4096": 0,
+      "reached_8192": 0
+    }
+  },
+  {
+    "agent_type": "greedy",
+    "agent_params": {},
+    "num_games": 20,
+    "timestamp": "2025-12-18T23:44:16.329649",
+    "games": [
+      {
+        "final_score": 1596,
+        "max_tile": 128,
+        "moves": 166,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            8,
+            32,
+            64,
+            4
+          ],
+          [
+            2,
+            16,
+            32,
+            128
+          ],
+          [
+            4,
+            8,
+            16,
+            32
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 1
+      },
+      {
+        "final_score": 5468,
+        "max_tile": 512,
+        "moves": 382,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            4,
+            32,
+            4,
+            16
+          ],
+          [
+            8,
+            16,
+            64,
+            512
+          ],
+          [
+            4,
+            8,
+            32,
+            128
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 2
+      },
+      {
+        "final_score": 4508,
+        "max_tile": 256,
+        "moves": 373,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            64,
+            128,
+            256
+          ],
+          [
+            8,
+            32,
+            64,
+            128
+          ],
+          [
+            4,
+            8,
+            32,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 3
+      },
+      {
+        "final_score": 5012,
+        "max_tile": 512,
+        "moves": 358,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            16,
+            8,
+            16,
+            8
+          ],
+          [
+            8,
+            64,
+            32,
+            512
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 4
+      },
+      {
+        "final_score": 2756,
+        "max_tile": 256,
+        "moves": 243,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            16,
+            32,
+            4,
+            8
+          ],
+          [
+            8,
+            16,
+            64,
+            256
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 5
+      },
+      {
+        "final_score": 2620,
+        "max_tile": 256,
+        "moves": 230,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            8,
+            32,
+            4,
+            256
+          ],
+          [
+            4,
+            16,
+            32,
+            64
+          ],
+          [
+            2,
+            8,
+            16,
+            32
+          ],
+          [
+            4,
+            2,
+            8,
+            16
+          ]
+        ],
+        "game_number": 6
+      },
+      {
+        "final_score": 3424,
+        "max_tile": 256,
+        "moves": 287,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            32,
+            128,
+            2
+          ],
+          [
+            8,
+            16,
+            64,
+            256
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 7
+      },
+      {
+        "final_score": 3408,
+        "max_tile": 256,
+        "moves": 283,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            4,
+            128,
+            16
+          ],
+          [
+            8,
+            32,
+            64,
+            256
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 8
+      },
+      {
+        "final_score": 3988,
+        "max_tile": 256,
+        "moves": 328,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            64,
+            4,
+            16
+          ],
+          [
+            16,
+            32,
+            128,
+            256
+          ],
+          [
+            4,
+            16,
+            32,
+            128
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 9
+      },
+      {
+        "final_score": 5848,
+        "max_tile": 512,
+        "moves": 420,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            32,
+            8,
+            512
+          ],
+          [
+            8,
+            16,
+            64,
+            128
+          ],
+          [
+            4,
+            8,
+            32,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            32
+          ]
+        ],
+        "game_number": 10
+      },
+      {
+        "final_score": 2676,
+        "max_tile": 256,
+        "moves": 228,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            8,
+            64,
+            2
+          ],
+          [
+            8,
+            16,
+            32,
+            256
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 11
+      },
+      {
+        "final_score": 1604,
+        "max_tile": 128,
+        "moves": 168,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            16,
+            2,
+            4,
+            32
+          ],
+          [
+            8,
+            32,
+            64,
+            128
+          ],
+          [
+            4,
+            8,
+            16,
+            32
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 12
+      },
+      {
+        "final_score": 2588,
+        "max_tile": 256,
+        "moves": 219,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            4,
+            8,
+            16,
+            4
+          ],
+          [
+            16,
+            64,
+            256,
+            2
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 13
+      },
+      {
+        "final_score": 3472,
+        "max_tile": 256,
+        "moves": 282,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            64,
+            2,
+            256
+          ],
+          [
+            4,
+            32,
+            128,
+            4
+          ],
+          [
+            2,
+            4,
+            32,
+            64
+          ],
+          [
+            4,
+            2,
+            8,
+            32
+          ]
+        ],
+        "game_number": 14
+      },
+      {
+        "final_score": 2692,
+        "max_tile": 128,
+        "moves": 248,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            16,
+            64,
+            128,
+            2
+          ],
+          [
+            2,
+            32,
+            64,
+            128
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 15
+      },
+      {
+        "final_score": 3540,
+        "max_tile": 256,
+        "moves": 299,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            4,
+            8,
+            16,
+            256
+          ],
+          [
+            16,
+            32,
+            64,
+            128
+          ],
+          [
+            4,
+            8,
+            32,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 16
+      },
+      {
+        "final_score": 2896,
+        "max_tile": 256,
+        "moves": 240,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            4,
+            8,
+            256
+          ],
+          [
+            8,
+            32,
+            2,
+            128
+          ],
+          [
+            4,
+            8,
+            16,
+            32
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 17
+      },
+      {
+        "final_score": 3304,
+        "max_tile": 256,
+        "moves": 268,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            8,
+            128,
+            16
+          ],
+          [
+            8,
+            16,
+            64,
+            256
+          ],
+          [
+            4,
+            8,
+            16,
+            64
+          ],
+          [
+            2,
+            4,
+            8,
+            16
+          ]
+        ],
+        "game_number": 18
+      },
+      {
+        "final_score": 2616,
+        "max_tile": 256,
+        "moves": 220,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            4,
+            16,
+            256
+          ],
+          [
+            8,
+            32,
+            64,
+            2
+          ],
+          [
+            4,
+            8,
+            2,
+            64
+          ],
+          [
+            2,
+            4,
+            16,
+            2
+          ]
+        ],
+        "game_number": 19
+      },
+      {
+        "final_score": 5640,
+        "max_tile": 512,
+        "moves": 398,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 0,
+        "total_nodes": 0,
+        "avg_time_per_move": 0.0,
+        "avg_nodes_per_move": 0.0,
+        "board": [
+          [
+            2,
+            64,
+            128,
+            4
+          ],
+          [
+            8,
+            32,
+            512,
+            2
+          ],
+          [
+            4,
+            16,
+            8,
+            64
+          ],
+          [
+            2,
+            8,
+            2,
+            16
+          ]
+        ],
+        "game_number": 20
+      }
+    ],
+    "statistics": {
+      "avg_score": 3482.8,
+      "max_score": 5848,
+      "min_score": 1596,
+      "avg_max_tile": 288.0,
+      "highest_tile": 512,
+      "avg_moves": 282.0,
+      "avg_time_per_move": 0.0,
+      "win_rate_2048": 0.0,
+      "win_rate_4096": 0.0,
+      "reached_128": 20,
+      "reached_256": 17,
+      "reached_512": 4,
+      "reached_1024": 0,
+      "reached_2048": 0,
+      "reached_4096": 0,
+      "reached_8192": 0
+    }
+  },
+  {
+    "agent_type": "expectimax",
+    "agent_params": {
+      "depth": 3,
+      "heuristic_weights": {
+        "empty_tiles": 2.7,
+        "monotonicity": 1.0,
+        "smoothness": 0.0,
+        "max_tile": 1.0
+      }
+    },
+    "num_games": 10,
+    "timestamp": "2025-12-18T23:44:18.340791",
+    "games": [
+      {
+        "final_score": 5416,
+        "max_tile": 512,
+        "moves": 375,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 5.736394643783569,
+        "total_nodes": 63748,
+        "avg_time_per_move": 0.015297052383422851,
+        "avg_nodes_per_move": 169.99466666666666,
+        "board": [
+          [
+            2,
+            32,
+            16,
+            2
+          ],
+          [
+            16,
+            4,
+            64,
+            4
+          ],
+          [
+            8,
+            512,
+            32,
+            128
+          ],
+          [
+            4,
+            8,
+            2,
+            4
+          ]
+        ],
+        "game_number": 1
+      },
+      {
+        "final_score": 5616,
+        "max_tile": 512,
+        "moves": 391,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 6.232827425003052,
+        "total_nodes": 66803,
+        "avg_time_per_move": 0.015940735102309596,
+        "avg_nodes_per_move": 170.85166240409208,
+        "board": [
+          [
+            2,
+            4,
+            64,
+            8
+          ],
+          [
+            8,
+            128,
+            16,
+            32
+          ],
+          [
+            2,
+            64,
+            512,
+            8
+          ],
+          [
+            8,
+            16,
+            2,
+            4
+          ]
+        ],
+        "game_number": 2
+      },
+      {
+        "final_score": 6876,
+        "max_tile": 512,
+        "moves": 463,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 7.322909355163574,
+        "total_nodes": 80278,
+        "avg_time_per_move": 0.01581621890964055,
+        "avg_nodes_per_move": 173.3866090712743,
+        "board": [
+          [
+            8,
+            4,
+            2,
+            4
+          ],
+          [
+            512,
+            16,
+            32,
+            16
+          ],
+          [
+            8,
+            256,
+            128,
+            2
+          ],
+          [
+            4,
+            32,
+            16,
+            4
+          ]
+        ],
+        "game_number": 3
+      },
+      {
+        "final_score": 6496,
+        "max_tile": 512,
+        "moves": 473,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 7.544720649719238,
+        "total_nodes": 77443,
+        "avg_time_per_move": 0.01595078361462841,
+        "avg_nodes_per_move": 163.72727272727272,
+        "board": [
+          [
+            8,
+            64,
+            16,
+            2
+          ],
+          [
+            128,
+            16,
+            128,
+            32
+          ],
+          [
+            8,
+            512,
+            64,
+            16
+          ],
+          [
+            2,
+            16,
+            8,
+            2
+          ]
+        ],
+        "game_number": 4
+      },
+      {
+        "final_score": 7080,
+        "max_tile": 512,
+        "moves": 481,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 6.942961931228638,
+        "total_nodes": 75795,
+        "avg_time_per_move": 0.014434432289456628,
+        "avg_nodes_per_move": 157.57796257796258,
+        "board": [
+          [
+            2,
+            16,
+            8,
+            4
+          ],
+          [
+            4,
+            128,
+            64,
+            16
+          ],
+          [
+            32,
+            512,
+            256,
+            8
+          ],
+          [
+            8,
+            16,
+            4,
+            2
+          ]
+        ],
+        "game_number": 5
+      },
+      {
+        "final_score": 12084,
+        "max_tile": 1024,
+        "moves": 715,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 10.273996829986572,
+        "total_nodes": 111962,
+        "avg_time_per_move": 0.014369226335645555,
+        "avg_nodes_per_move": 156.5902097902098,
+        "board": [
+          [
+            2,
+            4,
+            8,
+            2
+          ],
+          [
+            32,
+            128,
+            16,
+            4
+          ],
+          [
+            2,
+            4,
+            256,
+            64
+          ],
+          [
+            16,
+            1024,
+            2,
+            4
+          ]
+        ],
+        "game_number": 6
+      },
+      {
+        "final_score": 10936,
+        "max_tile": 1024,
+        "moves": 650,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 10.029296875,
+        "total_nodes": 110038,
+        "avg_time_per_move": 0.0154296875,
+        "avg_nodes_per_move": 169.28923076923076,
+        "board": [
+          [
+            4,
+            16,
+            2,
+            4
+          ],
+          [
+            32,
+            128,
+            8,
+            1024
+          ],
+          [
+            4,
+            16,
+            32,
+            4
+          ],
+          [
+            8,
+            128,
+            8,
+            2
+          ]
+        ],
+        "game_number": 7
+      },
+      {
+        "final_score": 7324,
+        "max_tile": 512,
+        "moves": 502,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 7.425201892852783,
+        "total_nodes": 80916,
+        "avg_time_per_move": 0.01479123883038403,
+        "avg_nodes_per_move": 161.18725099601593,
+        "board": [
+          [
+            8,
+            16,
+            2,
+            4
+          ],
+          [
+            512,
+            256,
+            4,
+            8
+          ],
+          [
+            64,
+            32,
+            8,
+            64
+          ],
+          [
+            8,
+            128,
+            4,
+            2
+          ]
+        ],
+        "game_number": 8
+      },
+      {
+        "final_score": 5396,
+        "max_tile": 512,
+        "moves": 382,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 5.9546215534210205,
+        "total_nodes": 65732,
+        "avg_time_per_move": 0.015588014537751363,
+        "avg_nodes_per_move": 172.07329842931938,
+        "board": [
+          [
+            2,
+            8,
+            2,
+            32
+          ],
+          [
+            4,
+            16,
+            128,
+            4
+          ],
+          [
+            8,
+            512,
+            64,
+            16
+          ],
+          [
+            2,
+            4,
+            16,
+            4
+          ]
+        ],
+        "game_number": 9
+      },
+      {
+        "final_score": 15932,
+        "max_tile": 1024,
+        "moves": 937,
+        "won_2048": false,
+        "won_4096": false,
+        "total_time": 13.904465675354004,
+        "total_nodes": 152394,
+        "avg_time_per_move": 0.014839344370708649,
+        "avg_nodes_per_move": 162.64034151547492,
+        "board": [
+          [
+            2,
+            4,
+            32,
+            2
+          ],
+          [
+            8,
+            128,
+            512,
+            8
+          ],
+          [
+            16,
+            1024,
+            256,
+            16
+          ],
+          [
+            4,
+            8,
+            32,
+            8
+          ]
+        ],
+        "game_number": 10
+      }
+    ],
+    "statistics": {
+      "avg_score": 8315.6,
+      "max_score": 15932,
+      "min_score": 5396,
+      "avg_max_tile": 665.6,
+      "highest_tile": 1024,
+      "avg_moves": 536.9,
+      "avg_time_per_move": 0.01524567338739476,
+      "win_rate_2048": 0.0,
+      "win_rate_4096": 0.0,
+      "reached_128": 10,
+      "reached_256": 10,
+      "reached_512": 10,
+      "reached_1024": 3,
+      "reached_2048": 0,
+      "reached_4096": 0,
+      "reached_8192": 0
+    }
   }
 ]

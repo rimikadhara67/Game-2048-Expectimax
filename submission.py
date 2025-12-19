@@ -54,12 +54,12 @@ def create_submission_zip():
                 print(f"✓ Added: {filename}")
         
         # Add report.pdf if it exists
-        if os.path.exists('report.pdf'):
-            zipf.write('report.pdf')
-            print(f"✓ Added: report.pdf")
-        else:
-            print(f"\n⚠ WARNING: report.pdf not found!")
-            print("  Remember to add your report before final submission!")
+        # if os.path.exists('report.pdf'):
+        #     zipf.write('report.pdf')
+        #     print(f"✓ Added: report.pdf")
+        # else:
+        #     print(f"\n⚠ WARNING: report.pdf not found!")
+        #     print("  Remember to add your report before final submission!")
     
     print("="*60)
     print(f"\n✓ Submission package created: {zip_filename}")
