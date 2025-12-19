@@ -1,24 +1,23 @@
 from game import Game2048
-from heuristics import Heuristics
+import math
 import time
 import random
 
 class ExpectimaxAgent:
     """
-    AI agent that uses Expectimax search to play 2048.
-    Alternates between Max nodes (player moves) and Chance nodes (random tile placement).
+    Expectimax agent for 2048 with heuristics
     """
     
-    def __init__(self, depth=4, heuristic_weights=None):
+    def __init__(self, depth=5, heuristic_weights=None):
         """
         Initialize the Expectimax agent.
         
         Args:
-            depth: Maximum search depth (number of plies)
-            heuristic_weights: Dict of weights for heuristic evaluation
+            depth: Maximum search depth (number of plies) - default 5 for good performance
+            heuristic_weights: Dict of weights (kept for compatibility, but uses optimized defaults)
         """
         self.depth = depth
-        self.heuristic_weights = heuristic_weights
+        self.heuristic_weights = heuristic_weights  # Kept for compatibility
         self.nodes_explored = 0
         self.time_taken = 0
     
@@ -74,7 +73,7 @@ class ExpectimaxAgent:
         
         # Terminal conditions
         if depth == 0 or game.is_game_over():
-            return Heuristics.evaluate(game.board, self.heuristic_weights)
+            return self._evaluate(game.board)
         
         if is_max_node:
             # Maximizing node: player chooses best move
@@ -91,7 +90,7 @@ class ExpectimaxAgent:
         available_moves = game.get_available_moves()
         
         if not available_moves:
-            return Heuristics.evaluate(game.board, self.heuristic_weights)
+            return self._evaluate(game.board)
         
         for move in available_moves:
             test_game = game.clone()
@@ -106,27 +105,28 @@ class ExpectimaxAgent:
     def _chance_node(self, game, depth):
         """
         Chance node: compute expected value over possible tile placements.
-        Uses sampling for efficiency at deeper levels.
+        Tiles can be 2 (90% probability) or 4 (10% probability).
         """
         empty_cells = game.get_empty_cells()
         
         if not empty_cells:
-            return Heuristics.evaluate(game.board, self.heuristic_weights)
+            return self._evaluate(game.board)
         
-        # For efficiency: sample cells if there are many empty cells
+        # More conservative sampling - only sample when really necessary
         num_empty = len(empty_cells)
-        
-        # If many empty cells and deep in tree, sample a subset
-        if num_empty > 6 and depth < 2:
-            # Sample up to 4 random positions
-            sampled_cells = random.sample(empty_cells, min(4, num_empty))
+        if num_empty > 10 and depth <= 1:
+            # Only sample at very shallow depths with many empty cells
+            sampled_cells = random.sample(empty_cells, min(8, num_empty))
+        elif num_empty > 6:
+            # Use more cells in mid-game
+            sampled_cells = random.sample(empty_cells, min(num_empty, 6))
         else:
-            # Use all empty cells
+            # Use all cells when there aren't many
             sampled_cells = empty_cells
         
         expected_score = 0
         
-        # For each sampled cell, calculate expected value
+        # For each cell, calculate expected value
         for i, j in sampled_cells:
             # Try placing a 2 (90% probability)
             test_game = game.clone()
@@ -144,6 +144,115 @@ class ExpectimaxAgent:
         
         # Average over sampled positions
         return expected_score / len(sampled_cells)
+    
+    def _evaluate(self, board):
+        """
+        Optimized evaluation function for 2048 board states.
+        
+        Uses adaptive weights based on game phase:
+        - Early game (many empty cells): prioritize space and smoothness
+        - Late game (few empty cells): prioritize monotonicity
+        
+        Args:
+            board: 2D list representing the game board
+            
+        Returns:
+            Float score (higher is better)
+        """
+        empty = sum(1 for row in board for cell in row if cell == 0)
+        
+        # More aggressive adaptive weights
+        if empty > 10:
+            # Very early game
+            w_empty = 150000.0
+            w_mono = 3000.0
+            w_smooth = 3000.0
+        elif empty > 6:
+            # Early-mid game
+            w_empty = 200000.0
+            w_mono = 8000.0
+            w_smooth = 2000.0
+        else:
+            # Late game: monotonicity is critical
+            w_empty = 300000.0
+            w_mono = 15000.0
+            w_smooth = 1000.0
+        
+        score = 0.0
+        
+        # 1. Empty tiles (squared for strong emphasis)
+        score += w_empty * (empty ** 2)
+        
+        # 2. Monotonicity (snake pattern)
+        score += w_mono * self._monotonicity(board)
+        
+        # 3. Smoothness (adjacent tile similarity)
+        score += w_smooth * self._smoothness(board)
+        
+        # 4. Max tile value (log scale)
+        max_tile = max(max(row) for row in board)
+        if max_tile > 0:
+            score += 2000.0 * math.log2(max_tile)
+        
+        # 5. Bonus for high tiles in corners (subtle, not dominating)
+        max_tile = max(max(row) for row in board)
+        corners = [board[0][0], board[0][3], board[3][0], board[3][3]]
+        if max_tile in corners:
+            score += 5000.0
+        
+        return score
+    
+    def _monotonicity(self, board):
+        """
+        Calculate monotonicity score.
+        Rewards tiles that increase/decrease consistently in one direction.
+        Uses log values to normalize across different tile magnitudes.
+        """
+        totals = [0.0, 0.0, 0.0, 0.0]  # up, down, left, right
+        
+        for i in range(4):
+            for j in range(3):
+                # Check rows (left/right monotonicity)
+                if board[i][j] > 0 and board[i][j+1] > 0:
+                    diff = math.log2(board[i][j]) - math.log2(board[i][j+1])
+                    if diff > 0:
+                        totals[2] += diff  # Left to right increasing
+                    else:
+                        totals[3] += -diff  # Right to left increasing
+                
+                # Check columns (up/down monotonicity)
+                if board[j][i] > 0 and board[j+1][i] > 0:
+                    diff = math.log2(board[j][i]) - math.log2(board[j+1][i])
+                    if diff > 0:
+                        totals[0] += diff  # Top to bottom increasing
+                    else:
+                        totals[1] += -diff  # Bottom to top increasing
+        
+        # Return best monotonicity direction (snake pattern)
+        return max(totals[0], totals[1]) + max(totals[2], totals[3])
+    
+    def _smoothness(self, board):
+        """
+        Calculate smoothness score.
+        Penalizes large differences between adjacent tiles.
+        Uses log values for normalization.
+        """
+        smoothness = 0.0
+        
+        for i in range(4):
+            for j in range(4):
+                if board[i][j] > 0:
+                    value = math.log2(board[i][j])
+                    
+                    # Compare with right neighbor
+                    if j < 3 and board[i][j+1] > 0:
+                        smoothness -= abs(value - math.log2(board[i][j+1]))
+                    
+                    # Compare with bottom neighbor
+                    if i < 3 and board[i+1][j] > 0:
+                        smoothness -= abs(value - math.log2(board[i+1][j]))
+        
+        return smoothness
     
     def get_stats(self):
         """Return statistics about the last search"""
@@ -169,7 +278,10 @@ class GreedyAgent:
         for move in available_moves:
             test_game = game.clone()
             _, points = test_game.move(move)
-            score = points + Heuristics.evaluate(test_game.board)
+            
+            # Simple evaluation: immediate points + empty cells
+            empty = sum(1 for row in test_game.board for cell in row if cell == 0)
+            score = points + empty * 100
             
             if score > best_score:
                 best_score = score

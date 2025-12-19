@@ -214,7 +214,7 @@ def main():
             'heuristic_weights': {
                 'empty_tiles': 2.7,
                 'monotonicity': 1.0,
-                'smoothness': 0.0,  # Disabled
+                'smoothness': 0.0,
                 'max_tile': 1.0
             }
         }
