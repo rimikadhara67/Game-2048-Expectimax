@@ -167,10 +167,6 @@ Average scores should be 15,000-40,000 depending on configuration.
 
 ## Author
 
-[Your Name]  
-Final Project - AI/Search Course  
+Rimika Dhara
+Final Project - CSCI 5511
 December 2025
-
-## License
-
-This project is for educational purposes.
